@@ -6,7 +6,7 @@ body {
 }
 
 .search {
-  background: linear-gradient(#000000de, #000000d5),
+  background: linear-gradient(#0000008c, #000000d1),
     url(https://picsum.photos/1080/720?random=1);
   height: 70vh;
   background-repeat: no-repeat;
