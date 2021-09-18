@@ -62,6 +62,7 @@ const Search = () => {
                     className="search-input"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
+                    required
                   />
 
                   <button
