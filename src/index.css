@@ -15,11 +15,14 @@ body {
   position: relative;
 }
 
-.search-content {
+.header {
+  position: relative;
+}
+.header-wrapper {
   position: absolute;
+  width: 100%;
   top: 50%;
   transform: translateY(-50%);
-  left: 17%;
 }
 
 .search-content h1,
@@ -33,6 +36,28 @@ body {
 .search-content p {
   font-size: 20px;
   font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.search-wrapper input {
+  width: 68%;
+  margin-right: 15px;
+  padding: 12px;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search-wrapper button {
+  padding: 12px 25px;
 }
 
 .footer {
@@ -52,5 +77,15 @@ body {
   .search-content h1 {
     font-size: 60px;
     transition: all 0.3s;
+  }
+  .search-wrapper {
+    flex-direction: column;
+  }
+  .search-wrapper input,
+  .search-wrapper button {
+    padding: 8px;
+  }
+  .search-wrapper button {
+    padding: 8px 25px;
   }
 }

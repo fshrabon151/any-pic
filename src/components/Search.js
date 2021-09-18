@@ -44,32 +44,33 @@ const Search = () => {
 
       {!loading && !error && (
         <>
-          <div className="search mb-5">
-            <div className="col-8 search-content">
-              <div className="container">
-                <div className="text-center">
+          <div className="header">
+            <div className="search"></div>
+            <div className="header-wrapper">
+              <div className="container heading-wrapper">
+                <div className="text-center text-light search-content">
                   <h1>AnyPic</h1>
-                  <p>Your source of free pictures!</p>
+                  <p className="mt-3">
+                    Your trusted source for searching free pictures!
+                  </p>
                 </div>
 
-                <div className="text-center">
-                  <form onSubmit={handleSubmit}>
-                    <input
-                      type="text"
-                      className="form-control py-3 mt-4"
-                      placeholder="Search free high quality photos"
-                      value={search}
-                      onChange={(e) => setSearch(e.target.value)}
-                      required
-                    />
-                    <button
-                      type="submit"
-                      className="mt-3 btn btn-light btn-lg text-uppercase mt-4"
-                    >
-                      Search
-                    </button>
-                  </form>
-                </div>
+                <form className="search-wrapper" onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Search for pictures..."
+                    className="search-input"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                  />
+
+                  <button
+                    className="btn btn-light text-dark text-center fw-bold text-uppercase"
+                    type="submit"
+                  >
+                    Search 🔍
+                  </button>
+                </form>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const ImageGrid = ({ images }) => {
     setNoOfElement(noOfElements + noOfElements);
   };
   return (
-    <div className="container mb-5 text-light">
+    <div className="container my-5 text-light">
       <div className="text-center pb-5">
         <h1>Matched images</h1>
       </div>
@@ -26,17 +26,21 @@ const ImageGrid = ({ images }) => {
       </div>
 
       <div className="d-flex justify-content-center py-4 mt-4">
-        <button
-          disabled={images.length === slice.length}
-          className="text-center btn btn-dark"
-          onClick={loadMore}
-        >
-          Show More
-        </button>
+        {images.length === slice.length ? (
+          ""
+        ) : (
+          <button
+            disabled={images.length === slice.length}
+            className="text-center btn btn-dark border-light"
+            onClick={loadMore}
+          >
+            Show More
+          </button>
+        )}
       </div>
 
       <p className="text-end">
-        Showing {`${images.length} of ${slice.length}`} images
+        Showing {`${slice.length} of ${images.length}`}
       </p>
     </div>
   );
