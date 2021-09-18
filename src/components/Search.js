@@ -41,7 +41,7 @@ const Search = () => {
   return (
     <>
       {loading && <Spinner />}
-      {error && <p>Failf to fetch data</p>}
+
       {!loading && !error && (
         <>
           <div className="search mb-5">
@@ -76,8 +76,13 @@ const Search = () => {
           {totalResults === 0 && (
             <h1 className="mt-5 text-center text-danger">No data found 😪</h1>
           )}
+          {error && (
+            <h1 className="mt-5 text-center text-danger">
+              Fail to fetch data 😪
+            </h1>
+          )}
           {images.length === 0 && (
-            <div className="container my-5 text-center">
+            <div className="container my-5 text-center footer">
               <h1>Hi, I’m F Shrabon. Nice to meet you.</h1>
               <p>
                 I'm a freelance Web designer and Front-end Developer, I design

@@ -7,7 +7,7 @@ const ImageGrid = ({ images }) => {
     setNoOfElement(noOfElements + noOfElements);
   };
   return (
-    <div className="container mb-5">
+    <div className="container mb-5 text-light">
       <div className="text-center pb-5">
         <h1>Matches images</h1>
       </div>

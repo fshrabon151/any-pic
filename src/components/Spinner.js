@@ -11,7 +11,7 @@ const Spinner = () => {
         alignItems: "center",
       }}
     >
-      <Loader type="Circles" color="#666" height={100} width={100} />
+      <Loader type="Circles" color="#fff" height={100} width={100} />
     </div>
   );
 };

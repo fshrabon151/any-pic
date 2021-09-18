@@ -1,5 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
+
+  background-color: #000;
+  transition: all 0.3s;
 }
 
 .search {
@@ -16,7 +19,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 15%;
+  left: 17%;
 }
 
 .search-content h1,
@@ -30,4 +33,24 @@ body {
 .search-content p {
   font-size: 20px;
   font-weight: 300;
+}
+
+.footer {
+  color: #ddd;
+  padding-top: 30px;
+  font-weight: 300;
+  letter-spacing: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .search-content h1 {
+    font-size: 75px;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search-content h1 {
+    font-size: 60px;
+    transition: all 0.3s;
+  }
 }
