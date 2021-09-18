@@ -9,9 +9,9 @@ const ImageGrid = ({ images }) => {
   return (
     <div className="container mb-5 text-light">
       <div className="text-center pb-5">
-        <h1>Matches images</h1>
+        <h1>Matched images</h1>
       </div>
-      <div className="image-grid row shadow rounded p-4 g-4 justify-content-center align-items-center">
+      <div className="image-grid row rounded p-4 pt-0 g-4 justify-content-center align-items-center">
         {slice.map((image) => (
           <a
             rel="noreferrer"
