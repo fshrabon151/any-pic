@@ -65,11 +65,8 @@ const Search = () => {
                     required
                   />
 
-                  <button
-                    className="btn btn-light text-dark text-center fw-bold text-uppercase"
-                    type="submit"
-                  >
-                    Search 🔍
+                  <button className="search-btn" type="submit">
+                    <i className="fas fa-search"></i>
                   </button>
                 </form>
               </div>

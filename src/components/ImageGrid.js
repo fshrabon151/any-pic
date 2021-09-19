@@ -31,7 +31,7 @@ const ImageGrid = ({ images }) => {
         ) : (
           <button
             disabled={images.length === slice.length}
-            className="text-center btn btn-dark border-light  my-5"
+            className="search-btn my-3"
             onClick={loadMore}
           >
             Show More
